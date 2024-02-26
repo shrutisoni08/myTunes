@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.nav-bar {
+  background: #333333;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+}
+#logo {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hero-section {
+  background: url(./images/poster.jpeg);
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 18rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+main {
+  background-color: #333333;
+}
+.button {
+  background: #ed0707;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-style: italic;
+}
+.containe > button {
+  background: #000080;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.Promo-container {
+  background: url(./images/starsBG.jpeg);
+  height: 600px;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+}
+
+.gift-card {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+  height: 500px;
+}
+.left-side {
+  grid-area: 1 / 1 / 1 / 1;
+}
+.right-side {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-top: 2rem;
+  margin-left: -5rem;
+  width: 80%;
+}
+.gift-card > .left-side > img {
+  width: 60%;
+}
+#Footer{
+    background: black;
+    color: #fff;
+    padding-top: 5rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.copyright{
+    background-color: #333333;
+    color: #fff;
+}
+
+/* MEDIA QUERIES FOR 1020PX */
+@media only screen and (max-width:1024px){
+    .hero-section>section>p{
+        text-align: center;
+    }
+    .container>img{
+        width: 90%;
+    }
+}
+/* MEDIA QUERIES FOR 768PX */
+@media only screen and (max-width:768px){
+    .containe>h1{
+        font-size: .8rem;
+    }
+    .containe>img{
+        width: 80%;
+    }
+    .right-side{
+        width: 95%;
+    }
+    .Promo-container>h1{
+        font-size: 1.5rem;
+    }
+}
+
+/* MEDIA QUERIES FOR 600PX */
+@media only screen and (max-width:650px){
+    .containe>h3{
+        font-size: 1.3rem;
+    }
+    .containe>p{
+        font-size: .5rem;
+    }
+    .containe>img{
+        width: 80%;
+    }
+    .right-side{
+        width: 95%;
+    }
+    .Promo-container>h1{
+        font-size: 1.5rem;
+    }
+    #Footer>section>h4{
+        font-size: 1rem;
+    }
+    #Footer>section>ul>li>a{
+        font-size: .8rem;
+    }
+    .copyright>p{
+        font-size: 1rem;
+    }
+    .gift-card{
+        padding-top: 2rem;
+    }
+
+}
+
+/* MEDIA QUERIES FOR 480PX */
+@media only screen and (max-width:480px){
+    .nav-bar{
+        font-size: .9rem;
+        width: 100%;
+    }
+    .hero-section{
+        background-position: center;
+        width: 100%;
+    }
+    .hero-section>section>p{
+        font-size: 1rem;
+    }
+    .gift-card{
+        height:  auto !important;
+    }
+    .right-side{
+        width: 90%;
+        font-size: .6rem;
+        margin-left: .5rem;
+    }
+    .right-side>h2{
+        font-size: 1rem;
+    }
+    .right-side>h5{
+        font-size: .7rem;
+    }
+    #Footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .Promo-container>h1{
+        font-size: 1rem;
+    }
+    main>p{
+        font-size: .8rem;
+    }
+    main>h1>img{
+        width: 30%;
+    }
+    main>h1{
+        font-size: 1.4rem;
+    }
+    main>h3{
+        font-size: 1.1rem;
+    }
+    main>.button{
+        font-size: 1.2rem;
+    }
+
+}
+
+/* MEDIA QUERIES FOR 320PX */
+@media only screen and (max-width:320px){
+    .nav-bar{
+        font-size: .4rem;
+        width: 100%;
+        height: 30px;
+    }
+    #logo{
+        font-size: .5rem;
+    }
+    .hero-section{
+        background-position: center;
+        padding-top: 10rem;
+        height: 600px;
+    }
+    .hero-section>section>h1{
+        font-size: .9rem;
+    }
+    .hero-section>section>h3{
+        font-size: .7rem;
+    }
+    .hero-section>section>p{
+        font-size: .7rem;
+    }
+    .gift-card{
+        height:  auto !important;
+    }
+    .right-side{
+        width: 90%;
+        font-size: .6rem;
+        margin-left: .5rem;
+    }
+    .right-side>h2{
+        font-size: 1rem;
+    }
+    .right-side>h5{
+        font-size: .7rem;
+    }
+    #Footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .copyright>p{
+        font-size: .7rem;
+    }
+    .Promo-container>h1{
+        font-size: .7rem;
+    }
+    .Promo-container>p{
+        font-size: .6rem;
+    }
+
+    main>p{
+        font-size: .5rem;
+    }
+    main>h1>img{
+        width: 20%;
+    }
+    main>h1{
+        font-size: 1rem;
+    }
+    main>h3{
+        font-size: 1rem;
+    }
+    main>.button{
+        font-size: .8rem;
+    }
+    .containe>h3{
+        font-size: .6rem;
+    }
+    .containe>p{
+        font-size: .6rem;
+    }
+    .containe>button{
+        font-size: .8rem;
+    }
+}
+
+/* 320px */
+/* 480px */
+/* 768px */
+/* 1024px */
+/* 1280px */
+/* 1440px */
+/* 1920px */
